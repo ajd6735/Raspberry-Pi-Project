@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Rectangular button styles with improved color contrast */
+.on[type="submit"], .off[type="submit"], .refresh[type="submit"]{
+    background: #00a2ae; /* Light teal for "On" */
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* More padding for rectangular shape */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px; /* Slight rounding for better aesthetics */
+    margin: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.on[type="submit"]:hover {
+    background: #028e94; /* Slightly darker for hover */
+}
+
+.off[type="submit"] {
+    background: #00a2ae; 
+}
+
+.off[type="submit"]:hover {
+    background: #028e94; /* Darker for hover */
+}
+
+.refresh[type="submit"] {
+    background: #4c9a80; 
+}
+
+.refresh[type="submit"]:hover {
+    background: #2e7c62; /* Darker for hover */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
